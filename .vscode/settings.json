@@ -3,5 +3,6 @@
         "pega",
         "Pegaxy",
         "Pegaxys"
-    ]
+    ],
+    "editor.formatOnSave": true
 }
