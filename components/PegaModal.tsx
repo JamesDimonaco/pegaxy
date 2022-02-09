@@ -24,6 +24,8 @@ interface IProps {
 }
 
 export default function PegaModal({ pega, open, setClose }: IProps) {
+  console.log(pega.imageUrl);
+
 
   return (
     <Transition.Root show={open} as={Fragment}>
@@ -57,7 +59,8 @@ export default function PegaModal({ pega, open, setClose }: IProps) {
             <div className="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
               <div>
                 <div className='flex justify-center object-cover shadow-lg rounded-lg'>
-                  <Image src={pega.imageUrl} alt={pega.name} width={200} height={200} />
+                  <img src={pega.imageUrl} alt={pega.name} />
+
                 </div>
 
                 <div className="mt-3 text-center sm:mt-5">

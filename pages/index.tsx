@@ -49,7 +49,7 @@ interface IProps {
 }
 
 export default function Home({ Pegaxys, Total, Vis }: IProps) {
-  console.log(Total, Vis)
+  console.log(Pegaxys)
 
   return (
     <div className="flex min-h-screen flex-col  items-center justify-center py-2">
